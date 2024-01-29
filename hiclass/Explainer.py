@@ -218,7 +218,7 @@ class Explainer:
         start_level = 1
         if len(self.hierarchical_model.local_classifiers_[start_level]) == 1:
             start_level = 2
-            
+
         for level in range(
             start_level, len(self.hierarchical_model.local_classifiers_)
         ):
@@ -234,9 +234,9 @@ class Explainer:
             # Calculate SHAP values for the given sample X
             shap_values = np.array(local_explainer.shap_values(X))
             shap_values_dict[level] = shap_values
-            
+
         return shap_values_dict
-            
+
     def _explain_lcppn_xr(self, X):
         """
         Generate SHAP values for each node using Local Classifier Per Parent Node (LCPPN) strategy.
