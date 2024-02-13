@@ -31,7 +31,7 @@ REQUIRED = ["networkx", "numpy", "scikit-learn"]
 
 # What packages are optional?
 # 'fancy feature': ['django'],}
-EXTRAS = {"ray": ["ray>=1.11.0"], "Explainer": ["shap"]}
+EXTRAS = {"ray": ["ray>=1.11.0"], "Explainer": ["shap", "xarray"]}
 
 # The rest you shouldn't have to touch too much :)
 # ------------------------------------------------
